@@ -51,11 +51,6 @@ We addressed key business questions such as:
 📊 Revenue trends across branches and product categories
 🏆 Best-selling categories by quantity and value
 🕰 Peak sales times by day and hour
-'''sql
-SELECT branch, DAYNAME(STR_TO_DATE(date, '%m/%d/%Y')) AS day_of_week, COUNT(invoice_id) AS total_transactions
-FROM walmart
-GROUP BY branch, day_of_week
-ORDER BY branch, total_transactions DESC;'''
 💳 Customer payment preferences
 💰 Profit margin analysis by city and category
 💡 Insights & Findings
